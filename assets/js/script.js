@@ -193,7 +193,12 @@ const showResults = () => {
 		localStorage.setItem('highScore', score);
 
 		// prompt the user for their initials
-		const initials = prompt('Please enter your initials');
+		let initials = prompt('Please enter your initials');
+
+    if (initials === null) {
+      initials = 'Anonymous';
+      localStorage.setItem('initials', initials);
+    } else {
 
 		// Add the initials to the local storage
 		localStorage.setItem('initials', initials);
