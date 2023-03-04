@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>Javascript Quiz</title>
+</head>
+
+<body>
+  <header>
+    <h1>Javascript Review Quiz</h1>
+
+  </header>
+
+  <main>
+
+    <!-- Timer Element -->
+
+    <div id="timer">
+      <h2>Time Remaining: <span id="time">60</span></h2>
+    </div>
+    <!-- Intro -->
+    <section id="intro" class="intro">
+      <h2>Test your knowledge of Javascript!</h2>
+      <p>To get started, click the Start Quiz Button</p>
+      <button id="start">Start Quiz</button>
+    </section>
+
+    <!-- Questions Insertion Point -->
+    <section id="questions" class="questions hide">
+      <h2>Questions</h2>
+      <h3 id="question-title">Question Title</h3>
+      <ul id="answers">
+
+      </ul>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="results hide">
+      <h2>Results</h2>
+      <p id="results-text">Your Score is: <span id="score"></span></p>
+      <p>The highest score is <span id="high-score"></span> by <span id="initials"></span></p>
+
+      <p>Play again?</p>
+      <button id="restart">Restart the Quiz</button>
+
+    </section>
+  </main>
+
+</body>
+
+</html>
