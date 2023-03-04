@@ -126,6 +126,31 @@ section.questions h3 {
 	color: #333;
 }
 
+/* answers ul */
+#answers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#answers button {
+	display: inline-block;
+	width: 100%;
+	margin: 2px;
+	padding: 4px 20px;
+	border: none;
+	background: #08c;
+	color: #fff;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#answers button:hover {
+	background: #06a;
+}
+
 section.results {
 	display: flex;
 	flex-direction: column;
