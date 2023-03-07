@@ -81,7 +81,9 @@ const startTimer = () => {
 	// Set the timer interval
 	timerInterval = setInterval(() => {
 		// Decrement the time left
-		timeLeft--;
+		if (timeLeft > 0) {
+			timeLeft--;
+		}
 
 		// Update the timer div
 		timeEl.textContent = timeLeft;
@@ -159,8 +161,11 @@ const checkAnswer = (answer) => {
 		}
 	} else {
 		// Decrement the time left
-		timeLeft -= 10;
-
+		if (timeLeft > 10) {
+			timeLeft -= 10;
+		} else {
+			timeLeft -= timeLeft;
+		}
 		// Update the timer div
 		timeEl.textContent = timeLeft;
 	}
